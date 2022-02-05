@@ -1,0 +1,54 @@
+http://localhost:8083/departments
+
+
+https://localhost/departments
+
+Protocol :- http
+
+host:- localhost
+
+Port :- 8083
+
+URI :- departments
+
+http://localhost:8083/departments
+
+https -> 443
+
+https://vlearn.herovired.com/theme/paradiso/ajax/activity_expand.php
+Elements:-
+	Opening and closing tags
+	<div></div>
+	<span></span>
+	
+	Self Closing tags
+	<hr />
+	<br />
+	<img />
+	<input type="text" />
+	
+	key-valued attribute	
+	<input type="email" />
+	
+	
+	single-valued attribute	
+	<input type="email" required/>
+	<input type="email" disabled />
+	
+	
+	VS Code Editor :- https://code.visualstudio.com/
+	Download for Windows
+	
+	Login Hyperlink
+	-> login.html
+	
+If i click -> login link
+	In Same page -> login.html
+	In different page -> login.html
+	
+Tables
+	rowspan
+	colspan
+	
+
+

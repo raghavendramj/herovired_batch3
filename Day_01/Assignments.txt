@@ -1,0 +1,14 @@
+Assignments:
+	Adding Icon logo to title bar
+	Align Property of image
+	
+	a -> target=_parent
+	
+	Managing Width
+	cell spacing
+	cell padding
+	
+	Description list
+		-> dl
+				dt
+				dd
