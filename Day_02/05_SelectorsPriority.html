@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>CSS Selectors Priority</title>
+    <style>
+      /* SELECTOR -> ELEMENT/TAGNAME   */
+      div {
+        /* color: red !important; */
+        color: red;
+        font-size: 20px;
+      }
+
+      /* SELECTOR -> CLASS   */
+      .division {
+        color: green;
+      }
+
+      /* SELECTOR -> ID   */
+      #myDiv {
+        color: blue;
+      }
+
+      h3 {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors Priority</h1>
+    <h3>Priority : ID > CLASS > ELEMENT</h3>
+    <div id="myDiv" class="division">Welcome to the world of magic!</div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <style>
+      /* ID Selector -> # */
+      #firstDiv {
+        background-color: lightblue;
+        color: crimson;
+        border: 1px solid red;
+      }
+
+      #myPara {
+        border: medium solid yellow;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      ul > li.player {
+        list-style-type: none;
+        color: yellowgreen;
+      }
+
+      ol > li.player {
+        list-style-type: lower-greek;
+        color: blue;
+      }
+
+      /* Class Selector -> . */
+      .player {
+        font-size: 20px;
+      }
+
+      /* Element Selector -> element */
+      h1 {
+        color: red;
+      }
+
+      /* Global Selector -> * */
+      body {
+        padding: 0px;
+        margin: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="firstDiv">This is my div</div>
+    <span>I am a inline element</span>
+    <p id="myPara">This is used for selectors</p>
+
+    <ul>
+      <li class="player">Virat Kohli</li>
+      <li class="player">KL Rahul</li>
+      <li class="player">Bumrah</li>
+    </ul>
+
+    <ol>
+      <li class="player">Yash Dhull</li>
+      <li class="player">Shaik Rasheed</li>
+      <li class="player">Nishant Sindhu</li>
+    </ol>
+
+    <h1>I am header 1</h1>
+  </body>
+</html>

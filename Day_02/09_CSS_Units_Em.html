@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Relative CSS Units</title>
+    <style>
+      * {
+        border-radius: 10px;
+      }
+      body {
+        padding: 20px;
+        border: medium solid black;
+        font-size: 16px;
+      }
+
+      section {
+        padding: 20px;
+        border: medium solid blue;
+        font-size: 14px;
+      }
+      div {
+        padding: 20px;
+        border: medium solid red;
+        /* 1em = 14px => Relative to immediate parent => section*/
+        font-size: 2em;
+      }
+      p {
+        padding: 20px;
+        border: medium solid violet;
+        /* 1rem = 16px => Relative to root element => body */
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    This is my body
+    <section>
+      This is my section
+      <div>
+        This is my div
+        <p>This is my para</p>
+      </div>
+    </section>
+  </body>
+</html>

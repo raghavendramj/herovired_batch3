@@ -1,0 +1,34 @@
+HTTP Methods :-	
+	CREATE	-> POST		-> insert into student values("raghav", "raghav@gmail.com");
+	READ 		-> GET		-> select * from student;
+	UPDATE 	-> PUT		-> update student set name="raghav" where id=1;
+	DELETE 	-> DELETE	-> delete from table student where id=1;
+	
+	
+http://127.0.0.1:5500/Day_02/02_welcome.html?username=raghav%40gmail.com&password=asdsadsa&password=Submit
+
+action :- 02_welcome.html
+first parameter :- 	username=raghav%40gmail.com
+Seond parameter :- password=asdsadsa
+
+http://127.0.0.1:5500/Day_02/02_welcome.html?username=9563245120&username=raghav%40gmail.com&username=Raghav&username=M+J&password=asdsadsa&age=26&dob=2022-02-24&file=HTTPMethods.txt&gender=on&Hobbies=on&Hobbies=on&password=Submit
+
+
+Priority
+	-> ID -> Class -> Element
+	
+	Styling Priority
+		-> Inline -> Internal -> External
+		
+		
+Page1
+	-> common.css
+	-> page1.css
+Page2
+	-> common.css
+	-> page2.css
+Page3
+	-> common.css
+	-> page3.css 
+	
+	

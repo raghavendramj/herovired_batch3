@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Hands On of CSS Priorities</title>
+    <link href="07_styles.css" rel="stylesheet" />
+    <style>
+      p {
+        color: red;
+      }
+
+      h3 {
+        color: green;
+      }
+
+      .class_h3 {
+        color: blue;
+      }
+      #id_h3 {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="id_h3" class="class_h3">
+      ID Selector has the higest priority when compared to class and element
+      selectors
+    </h3>
+    <h3 class="class_h3">
+      Class selector has higher priority than element selector
+    </h3>
+    <h3>Element selector has least priority</h3>
+
+    <p id="id_p" class="class_p" style="color: blueviolet">
+      Inline CSS has higher priority than any other CSS Selectors
+    </p>
+    <p>External Stylesheet has least priority</p>
+  </body>
+</html>
