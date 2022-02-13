@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>minHeight Sample</title>
+    <style>
+      div, p {
+        border: 1px solid red;
+        margin: 20px;
+        border-radius: 10px;
+      }
+      #div1 {
+        max-height: 100px;
+        height: 100%;
+        background-color: lightblue;
+      }
+
+      .minHeight{
+          /* height: 100%; */
+          min-height: 50px;
+          background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">This is the content of div1</div>
+    <div>This is the content of div2</div>
+    <p class="minHeight">This is my paragrapg</p>
+  </body>
+</html>

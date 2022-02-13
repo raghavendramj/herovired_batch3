@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Box Sizing</title>
+    
+    <style>
+      div {
+        border: 5px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        width: 300px;
+        /* 300 + 10*2 + 5*2 = 330 */
+        /* includes content, padding and border */
+        box-sizing: content-box;
+
+        /* includes content, padding and border */
+        /* 270 + 10*2 + 5*2 = 300 */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">This is the div</div>
+    <br />
+    <button> Change the Color of Div</button>
+  </body>
+</html>
