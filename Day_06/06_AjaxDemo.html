@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style></style>
+    <script>
+      function loadPosts() {
+        var postId = document.getElementById("postId").value;
+        var xhttp = new XMLHttpRequest();
+        var url = "https://jsonplaceholder.typicode.com/todos/" + postId;
+
+        //1 -> Method -> GET, POST, PUT, DELETE
+        //2 -> URL
+        //3 -> Syncronous / Asyncronous
+        xhttp.open("GET", url, true);
+        xhttp.send();
+
+        xhttp.onreadystatechange = function () {
+          // 0 -> UNSENT
+          // 1 -> OPENED
+          // 2 -> HEADERS_RECEIVED
+          // 3 -> LOADING
+          // 4 -> DONE
+          if (xhttp.readyState !== 4){
+            console.log(" Current State : ", xhttp.readyState);
+          } 
+
+          // Informational responses (100–199)
+          // Successful responses (200–299)
+          // Redirection messages (300–399)
+          // Client error responses (400–499)
+          // Server error responses (500–599)
+          if (xhttp.readyState === 4 && xhttp.status === 200) {
+            console.log("Response :- ", xhttp.response);
+            document.getElementById("posts").innerHTML = xhttp.response;
+          }
+        };
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="text" name="postId" id="postId" />
+    <button onclick="loadPosts()">Load Posts</button>
+    <div id="posts"></div>
+  </body>
+</html>

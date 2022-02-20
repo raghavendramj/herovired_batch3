@@ -57,12 +57,12 @@ function spliceExample() {
   //Adding new elements to the array.
   cities.splice(1, 0, "Delhi", "Goa");
   console.log("After SPLICE ADD CASE :: Cities ", cities);
- 
+
   //Only removal
   var cities = ["Bangalore", "Mysore", "Chennai", "Kerala"];
   console.log("Before SPLICE DELETE CASE :: Cities ", cities);
   cities.splice(2, 2);
-  console.log("After SPLICE DELETE CASE :: Cities ", cities);    
+  console.log("After SPLICE DELETE CASE :: Cities ", cities);
 
   var cities = ["Bangalore", "Mysore", "Chennai", "Kerala"];
   console.log("Before SPLICE ADD and REMOVE CASE :: Cities ", cities);
@@ -71,26 +71,32 @@ function spliceExample() {
   var cities = ["Bangalore", "Mysore", "Chennai", "Kerala"];
   console.log("Before SPLICE ADD and REMOVE CASE :: Cities ", cities);
   cities.splice(0, 1, "Gujurat", "MP");
-  console.log("After SPLICE ADD and REMOVE :: Cities ", cities);  
+  console.log("After SPLICE ADD and REMOVE :: Cities ", cities);
 
   //Removes all the elements from the given index to end of the array
   var cities = ["Bangalore", "Mysore", "Chennai", "Kerala"];
   cities.splice(2);
 }
 
-function sliceMethod(){
+function sliceMethod() {
   var cities = ["Bangalore", "Mysore", "Chennai", "Kerala"];
   var result = cities.slice(0, 3);
   console.log("ORIGINAL Cities is : ", cities);
   console.log("RESULT Cities is : ", result);
 }
 
-
-function otherMethods(){	
-	var fruits = ["Apple", "oranges", "Bananas", "Mangoes", "oranges", "Bananas", "Mangoes"]; 
-	
-	console.log("indexOf of  Mangoes", fruits.indexOf("Mangoes");)
-	console.log("lastIndexOf of  Mangoes", fruits.lastIndexOf("Mangoes");)
-	var nums = [2, 10, 1, 20];
-	nums.sort()
+function otherMethods() {
+  var fruits = [
+    "Apple",
+    "oranges",
+    "Bananas",
+    "Mangoes",
+    "oranges",
+    "Bananas",
+    "Mangoes",
+  ];
+  console.log("indexOf of  Mangoes", fruits.indexOf("Mangoes"));
+  console.log("lastIndexOf of  Mangoes", fruits.lastIndexOf("Mangoes"));
+  var nums = [2, 10, 1, 20];
+  nums.sort();
 }

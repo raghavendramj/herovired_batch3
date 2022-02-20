@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <style>
+        h2{
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        //Event handler / Callback Function / Event Listener
+        function submitForm() {
+            debugger;
+            console.log("You have submmited the form!");
+        }
+
+        function focusedEvent(event) {
+            console.log("You have focused on ", event);
+        }
+
+        function hovered(event) {
+            console.log("You have onmouseover on h2 element");
+        }
+        function contentChanged(changedElement) {
+            console.log("You have changed the content to :-  ", changedElement.value );
+        }
+    </script>
+</head>
+
+<body>
+    <h2 onmouseover="hovered()">HTML Events</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td>
+                    <input type="text" name="username" id="username" 
+                    onfocus="focusedEvent(this)"
+                    onchange="contentChanged(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password">Username</label></td>
+                <td>
+                    <input type="password" name="username" id="password" 
+                    onfocus="focusedEvent(this)"  />
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Clear Form" /></td>
+                <!-- Event -> Onclick -->
+                <!-- Event handler -> submitForm() -->
+                <td><input type="button" value="Login" onclick="submitForm()" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
